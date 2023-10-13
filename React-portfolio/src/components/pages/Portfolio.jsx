@@ -1,0 +1,11 @@
+export default function Portfolio() {
+    return (
+      <div>
+        <h1>Portfolio</h1>
+        <p>
+          Work Samples
+        </p>
+      </div>
+    );
+  }
+  
