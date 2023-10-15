@@ -3,7 +3,7 @@ export default function About() {
       <div className="text-center">
         <img src='https://user-images.githubusercontent.com/140107498/275292302-8ec70b3e-59f1-402a-9102-37fa47aad5c3.png' alt="Alexandra Zykova photo" className="img-fluid myimg"></img>
         <p>
-          Welcome to My React Portfolio!
+          Welcome to My Portfolio!
         </p>
         <p>My name is Alexandra Zykova, I am a passionate and dedicated Web Development student at University of Toronto. 
           I am on an exciting journey of crafting digital experiences, earning something new and practicing my coding skills every day.

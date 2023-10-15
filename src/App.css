@@ -21,6 +21,7 @@
 
 footer {
   background-color: var(--pink);
+  text-align: center !important;
 }
 
   
@@ -42,6 +43,7 @@ h3 {
 
 button {
   background-color: var(--pink);
+  width: 100px;
 }
 
 .nav {
@@ -84,9 +86,45 @@ li.nav-item.name {
 }
 
 a {
-  transition: color 0.5s ease;
+  transition: color 0.5s ease !important;
+  text-decoration: none !important;
+  color: var(--dark) !important;
+
 }
 
 a:hover {
   color: var(--semi-dark) !important;
+}
+
+.work-item {
+  width: 300px;
+  margin: 1rem;
+  flex: 0 0 20%;
+}
+
+.work-item img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.work-item img:hover {
+  transform: scale(1.1);
+}
+
+/* Project name styles */
+.work-item p.project-name {
+  text-align: center;
+  background-color: var(--pink);
+  color: var(--light);
+  padding: 5px;
+  margin: 0;
+}
+
+input {
+  width: 40vh;
+}
+
+.img-fluid{ 
+  max-width: 30vh !important;
 }
