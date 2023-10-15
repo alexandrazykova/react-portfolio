@@ -1,6 +1,7 @@
 function NavTabs({ currentPage, handlePageChange }) {
-    return (
+    return(
       <ul className="nav nav-tabs">
+         
         <li className="nav-item">
           <a
             href="#about"
@@ -42,6 +43,7 @@ function NavTabs({ currentPage, handlePageChange }) {
             Contact
           </a>
         </li>
+        <li className="nav-item name">Alexandra Zykova</li>
       </ul>
     );
   }

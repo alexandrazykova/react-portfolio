@@ -1,7 +1,5 @@
 import { useState } from 'react';
-
-// Here we import a helper function that will check if the email is valid
-// import { checkPassword, validateEmail } from '../../utils/helpers';
+import { validateEmail } from '../../utils/helpers';
 
 function Contact () {
   // Create state variables for the fields in the form
@@ -17,7 +15,7 @@ function Contact () {
     const inputType = target.name;
     const inputValue = target.value;
 
-    // Based on the input type, we set the state of either email, username, and password
+    // Based on the input type, we set the state of either email or username
     if (inputType === 'email') {
       setEmail(inputValue);
     } else if (inputType === 'name') {
@@ -33,18 +31,18 @@ function Contact () {
 
     // First we check to see if the email is not valid or if the userName is empty. If so we set an error message to be displayed on the page.
     if (!validateEmail(email) || !name) {
-      setErrorMessage('Email or username is invalid');
+      setErrorMessage('Email is invalid');
       // We want to exit out of this code block if something is wrong so that the user can correct it
       return;
-      // Then we check to see if the password is not valid. If so, we set an error message regarding the password.
+      
     }
-    if (!checkMessage(message)) {
+    if (!message) {
       setErrorMessage(
-        `Choose a more secure password for the account: ${name}`
+        `Please leave a message`
       );
       return;
     }
-    alert(`Hello ${name}`);
+    alert(`Hello ${name}! Thank you for visiting`);
 
     // If everything goes according to plan, we want to clear out the input after a successful registration.
     setName('');
