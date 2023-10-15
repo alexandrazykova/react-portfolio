@@ -75,6 +75,7 @@ main {
 
 .nav-link {
   color: var(--dark) !important;
+  margin-top: 4px;
 }
 
 .nav-link.active {
@@ -84,7 +85,8 @@ main {
 }
 
 .nav-tabs {
-  border: none;
+  border: none !important;
+  border-width: 0;
   background-color: var(--orange);
   color: var(--semi-dark);
 }
@@ -114,35 +116,18 @@ a:hover {
   color: var(--semi-dark) !important;
 }
 
-/* Look into BEM(Block element modifiers) for CSS. You'll never have to use !important again */
-
-/* Also scss is pretty dope, it allows you to type css like
-a{
-  transition: color 0.5s ease;
-  &:hover{
-   color: var(--semi-dark) !important;
-  }
-}
-
-or
-
-.nav-link{
-  &.active{
-    background: whatever
-  }
-}
-
-*/
-
 .work-item {
   width: 300px;
   margin: 1rem;
-  flex: 0 0 20%;
+  height: 300px;
+  /* flex: 0 0 20%; */
+  margin-bottom: 70px;
 }
 
-.work-item img {
+.work-item a img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
   transition: transform 0.3s ease;
 }
 
@@ -165,4 +150,20 @@ input {
 
 .img-fluid{ 
   max-width: 30vh !important;
+}
+
+.work {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+  align-items: center;
+
+}
+
+.work-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }

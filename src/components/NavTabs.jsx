@@ -37,6 +37,7 @@ function NavTabs({ currentPage, handlePageChange }) {
   };
 
   return (
+    <nav className="nav d-flex px-4 justify-content-between align-item-center">
     <ul className="nav nav-tabs">
       <li className="nav-item">
         <a
@@ -79,8 +80,10 @@ function NavTabs({ currentPage, handlePageChange }) {
           Contact
         </a>
       </li>
-      <li className="nav-item name">Alexandra Zykova</li>
+      
     </ul>
+    <h1 className="nav-item name">Alexandra Zykova</h1>
+    </nav>
   );
 }
 

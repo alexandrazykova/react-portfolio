@@ -22,12 +22,12 @@ export default function PortfolioContainer() {
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
-    <div className="body min-vh-100">
+    <div className="body min-vh-100 d-flex flex-column">
       {/* We are passing the currentPage from state and the function to update it */}
       <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
       {/* Here we are calling the renderPage method which will return a component  */}
       {/* Use paddings to create space between a parents border and its children not margin.*/}
-      <main className="px-3 pb-6">{renderPage()}</main>
+      <main className="px-3 pb-6 flex-grow-1">{renderPage()}</main>
       <Footer />
     </div>
   );
