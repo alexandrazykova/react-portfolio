@@ -175,3 +175,16 @@ p {
 input {
   padding: 20px;
 }
+
+@media (max-width: 768px) {
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+}
+
+}
