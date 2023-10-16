@@ -14,7 +14,7 @@ Please check it out here https://alexandra-zykova-portfolio.netlify.app/
 
 ## Screenshot
 
-![screenshot] (https://user-images.githubusercontent.com/140107498/275367739-206298cf-33b6-497e-8b7d-6129136cfa31.png)
+![screenshot](https://user-images.githubusercontent.com/140107498/275368441-e381b909-db91-4cd3-b8e4-d484554e21e0.png)
 
 ## Collaborators
 
