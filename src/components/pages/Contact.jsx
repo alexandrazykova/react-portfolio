@@ -51,9 +51,9 @@ function Contact () {
   };
 
   return (
-    <div className="container text-center">
-      <h1>Hello {name}</h1>
-      <form className="form" onSubmit={handleFormSubmit}>
+    <div className="container">
+      <h1>Thank you for visiting {name}!</h1>
+      <form className="form row" onSubmit={handleFormSubmit}>
         <input
           value={email}
           name="email"

@@ -28,19 +28,18 @@ footer {
 }
 
 h1 {
-  color: black;
+  color: var(--dark) !important;
   font-size: 24px;
-}
+  text-align: center;
 
-h3 {
-  margin: auto;
-  color: var(--dark);
-  font-size: 20px;
 }
 
 button {
   background-color: var(--pink);
-  width: 100px;
+  color: var(--dark);
+  padding: 5px;
+  border: var(--semi-dark);
+  margin-top: 20px !important;
 }
 
 .nav {
@@ -50,32 +49,19 @@ button {
 
 main {
   padding-bottom: 1.5rem;
-
-  /* Your footer is 24px tall, so this will fix the fixed footer from overlapping the content */
-  /* if bootstrap wasnt trash, I'd apply a class of pb-6 to the <main> element, but alas we have to use this */
-  /* If it looks like there is too much space between your <p> tag and the botton, its because 
-  Bootstrap and most FE libs add margin-bottom: 1rem to all <p> tags by default, something to keep in mind */
 }
 
 .img-container {
-  /* Also use paddings/margins with "rem". 1 rem === the roots font size. 
-  So if root font size is 16px, 1rem === 16px. 4px === .25rem. 
-  I RARELY use view port units in a professional setting and if so its
-   for height/width and its usually 100vh/100vw */
   padding: 2vh;
 }
 
 .myimg {
-  /* margin: 2vh;  This is whats causing your image to be offset in lower resolutions*/
-  /* Wrapped your image in a div and added padding to that. Only use margin to move elements away from one another.
-  The only time I'd add horizontal margin with a single element in a block/flex-column parent (Elements stack top to bottom),
-  is margin-left: auto (Push an element to the right), margin-right:auto(push to the left) or both to center an element */
   border-radius: 50%;
 }
 
 .nav-link {
   color: var(--dark) !important;
-  margin-top: 4px;
+  margin-top: 6px;
 }
 
 .nav-link.active {
@@ -146,6 +132,8 @@ a:hover {
 
 input {
   width: 40vh;
+  margin-top: 20px !important;
+  background-color: #f6e5f8;
 }
 
 .img-fluid{ 
@@ -166,4 +154,24 @@ input {
   justify-content: center;
   align-items: center;
 
+}
+
+.fa {
+  font-size: 20px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+p {
+  margin: 2rem;
+}
+
+.form {
+  margin: 20px;
+}
+
+input {
+  padding: 20px;
 }
