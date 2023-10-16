@@ -6,7 +6,7 @@ function NavTabs({ currentPage, handlePageChange }) {
     // This function is easier to refactor than going through every element and making an adjustment.
     // Also every class is gonna have nav-link regardless of active or not, so this is better than repeating yourself in the ternary.
 
-    let navTabClass = "nav-link"; // We use "let" because we might reassign it later.
+    let navTabClass = "nav-link";
     if (navigationString === currentPage) navTabClass += " active";
     return navTabClass;
 

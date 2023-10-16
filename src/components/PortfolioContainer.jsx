@@ -11,9 +11,8 @@ export default function PortfolioContainer() {
 
   const renderPage = () => {
     const { about, resume, portfolio, contact } = navigationConstants;
-    // Above is called destructuring.
 
-    if (currentPage === about) return <About />; // If not destructuring currentPage === navigationConstants.about
+    if (currentPage === about) return <About />; 
     if (currentPage === resume) return <Resume />;
     if (currentPage === portfolio) return <Portfolio />;
     if (currentPage === contact) return <Contact />;
@@ -23,10 +22,9 @@ export default function PortfolioContainer() {
 
   return (
     <div className="body min-vh-100 d-flex flex-column">
-      {/* We are passing the currentPage from state and the function to update it */}
+      {/* Passing the currentPage from state and the function to update it */}
       <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
-      {/* Here we are calling the renderPage method which will return a component  */}
-      {/* Use paddings to create space between a parents border and its children not margin.*/}
+      {/* Here calling the renderPage method which will return a component  */}
       <main className="px-3 pb-6 flex-grow-1">{renderPage()}</main>
       <Footer />
     </div>
