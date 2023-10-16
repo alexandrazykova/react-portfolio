@@ -38,7 +38,7 @@ function NavTabs({ currentPage, handlePageChange }) {
 
   return (
     <nav className="nav d-flex px-4 justify-content-between align-item-center">
-    <ul className="nav col col-lg-6 nav-tabs">
+    <ul className="nav col-9 nav-tabs">
       <li className="nav-item">
         <a
           href="#about"
